@@ -1,48 +1,179 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 
+@keyframes slide-down {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes invize {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .warp {
+  width: 100%;
+  background-color: #131313; /* Змінено на чорний */
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  align-content: start;
+  margin-top: 0;
+  background-color: transparent;
+  animation: slide-down 2s ease-in-out;
+}
+.warp .svg {
+  position: relative;
+  margin-top: 0;
+  background-color: transparent;
+  animation: slide-down 2s ease-in-out;
+}
+.warp .photo-container {
+  width: 100%;
+  background-color: #131313;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  position: relative;
+  animation: slide-down 2s ease-in-out;
+}
+.warp .photo-container .photo {
+  max-width: 30%;
+  aspect-ratio: 1/1;
+  border: 4px solid black;
+  border-radius: 50%;
+  animation: invize 3.5s ease-in-out;
+}
+.warp .photo-container .photo img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  animation: invize 3.5s ease-in-out;
+  background-color: black;
+}
+.warp .text-container {
+  height: auto;
+  background-color: #fff;
+  color: black;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  margin: 0;
+}
+.warp .text-container .btn-container {
+  margin: 100px;
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
-.warp h2 {
-  margin: 20px 0;
+.warp .text-container .btn-container a {
+  font-size: 40px;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  transition: all 0.3s ease;
 }
-.warp form {
+.warp .text-container .btn-container a:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.warp .text-container .nav {
+  height: 10vh;
+  width: 100%;
+  background-color: #131313;
+  color: white;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-.warp form input {
-  width: 420px;
-  height: 40px;
-  border: none;
-  box-shadow: 0 0 3px #999;
-  border-radius: 0 10px;
-  outline: none;
-  margin-bottom: 30px;
+.warp .text-container .nav .contact-info {
+  color: white;
+  margin: 30px;
+  font-size: 2vh;
 }
-.warp form textarea {
-  width: 400px;
-  height: 300px;
-  border: none;
-  box-shadow: 0 0 3px #999;
-  border-radius: 0 10px;
-  padding: 10px;
-  outline: none;
-  margin-bottom: 30px;
-  resize: none;
+.warp .text-container .nav .icon-container {
+  align-items: center;
+  width: auto;
+  height: auto;
 }
-.warp form button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 500;
+.warp .text-container .nav .icon-container a {
+  margin: 10px;
+}
+.warp .text-container h3 {
+  color: black;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 420px;
+}
+.warp .text-container h2 {
+  font-size: 100px;
+  font-weight: 200;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 90%;
+}
+.warp .text-container p {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.603);
+  text-align: center;
+  margin: 100px;
+}
+
+/* Медіазапити */
+@media (max-width: 1008px) {
+  .warp .text-container .btn-container {
+    display: grid;
+  }
+}
+@media (max-width: 908px) {
+  .warp .text-container h2 {
+    font-size: 50px;
+  }
+  .warp .text-container p {
+    font-size: 30px;
+    margin: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .warp .text-container .nav .icon-container {
+    display: none;
+  }
+  .warp .text-container h3, .warp .text-container h2, .warp .text-container p {
+    font-size: 20px;
+    margin: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .warp .text-container h2 {
+    font-size: 70px;
+  }
+  .warp .text-container p {
+    font-size: 35px;
+    margin: 10px;
+  }
+  .warp .text-container .nav .contact-info {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
