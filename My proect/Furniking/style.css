@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrap{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homePage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.topHeader{
+    width: 100%;
+    height: 50px;
+    background-color: #7AC751;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+    color: #fff;
+}
+.topHeaderContainer{
+    display: flex;
+    align-items: center;
+}
+.topHeaderContainer select{
+    margin-right: 20px;
+    background-color: #7AC751;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+.topHeaderContainer div{
+    border-left: 2px solid #fff;
+    padding-left: 20px
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 130px;   
+    justify-content: space-between;
+}
+.inputGroup{
+    border: 1px solid #7AC751;
+     border-radius: 8px;    
+     display: flex;
+     align-items: center;
+}
+.inputGroup input{
+    width: 350px;
+    height: 45px;
+    padding: 0 10px 0 25px;
+    outline: none;
+    border: none;  
+}
+.inputGroup select{
+    height: 45px;
+    border: none;
+    border-left: 2px solid #e3e3e3 ;
+}
+.inputGroup button{
+    background-color: #7AC751;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+}
+
+.nav {
+     display: flex; /* Робить елементи гнучкими контейнерами, розташовуючи їх в один рядок */
+    align-items: center; /* Вертикально центрує дочірні елементи */
+    justify-content: flex-start; /* Вирівнює елементи на початку контейнера */
+    width: 100%;
+    height: 70px; 
+    padding: 0;
+    background-color: #F7F8FA;
+   
+}
+.nav-element{
+    display: flex; /* Робить елементи гнучкими контейнерами, розташовуючи їх в один рядок */
+    align-items: center; /* Вертикально центрує дочірні елементи */
+    justify-content: center; /* Вирівнює елементи на початку контейнера */
+
+    width: 260px;
+    height: 70px;
+    background-color: #7AC751;
+    color: #fff;
+    margin-left: 135px;
+
+}
+
+
+
+.nav-text{
+    margin-left: 65px;
+    font-weight: 400;
+    color: rgba(85, 85, 85, 1);
+}
+
+.container{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+/* Основний контейнер бічної панелі */
+.sidebar {
+    width: 260px; /* Ширина згідно вашого знімка */
+    height: 460px;
+    background-color: #fff; /* Білий фон */
+    padding: 0; /* Прибираємо внутрішні відступи від самого контейнера */
+    margin-left: 135px;
+}
+
+/* Прибираємо стандартні маркери списку та відступи */
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стилі для кожного пункту списку (<li>) */
+.sidebar ul li {
+    /* Додаємо тонку лінію знизу для розділення пунктів */
+    border-bottom: 1px solid #f0f0f0; /* Дуже світло-сіра лінія */
+}
+
+/* Прибираємо лінію після останнього елемента */
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+/* Стилі для посилання (<a>) всередині кожного пункту списку */
+.sidebar ul li a {
+    display: block; /* Важливо, щоб посилання заповнювало всю ширину li і padding працював */
+    padding: 11px 20px; /* Внутрішні відступи: 12px зверху/знизу, 20px зліва/справа */
+    color: #333; /* Колір тексту */
+    text-decoration: none; /* Прибираємо підкреслення */
+    font-size: 1em; /* Розмір шрифту */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Плавний перехід для ефекту наведення */
+    white-space: nowrap; /* Запобігає переносу тексту */
+}
+
+/* Стилі при наведенні курсору на посилання */
+.sidebar ul li a:hover {
+    background-color: #f5f5f5; /* Трохи світліший фон при наведенні */
+    color: #28a745; /* Зелений колір тексту при наведенні (як у прикладах Furniking) */
+}
+
+/* Стилі для активного пункту (якщо є) */
+.sidebar ul li a.active {
+    background-color: #e0f2f7; /* Або інший колір для активного пункту, як на знімку (світло-блакитний) */
+    color: #28a745; /* Активний колір тексту */
+    font-weight: 500; /* Можливо, трохи жирніший */
+}
+.main-banner{
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    background-color: #F1FAFF;
+    width: 830px;
+    height: 450px;
+    margin-bottom: 0;
+}
+.banner-text-mein{
+    justify-content: center;
+    align-items: start;
+    background-color: bisque;
+}
+.text-banner{
+    margin-left: 65px;
+}
+.banner-button{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #Fff;
+    background-color: #7AC751;
+    width: 130px;
+    height: 40px;
+    font-size: large;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+
+}
+.banner-image-container{
+    display: flex;
+    align-items: end;
+}
+.banner-image{
+    margin-top: 40px;
+    margin-left: -30px;
+}
+
+.banner-card{
+    width: 98px;
+    height: 90px;
+    background-color: #Fff;
+    border: 2px;
+    border: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.icons-main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+
+}
+
+.icons-conteiner{
+    margin-left: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}

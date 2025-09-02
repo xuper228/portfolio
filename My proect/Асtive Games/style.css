@@ -1,0 +1,339 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9af3ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.background-circle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.712); 
+    border-radius: 50%; 
+    z-index:1;
+
+}
+
+
+.circle-1 {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    right: -75px;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: 50%;
+   
+}
+
+
+
+.container {
+    display: flex;
+    background-color: #ffffff75;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1200px;
+    width: 90%;
+    position: relative;
+    padding: 20px; 
+}
+
+
+.container::before {
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    right: -75px;
+    transform: translateX(-50%);
+}
+
+.container::after {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.sidebar {
+    width: 250px;
+    padding: 30px;
+    background-color: #ffffff93; 
+    border-radius: 15px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #64b5f6; 
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.profile-member {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    margin-bottom: 15px;
+}
+
+.navigation ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+
+}
+
+.navigation ul li a:hover {
+    background-color: #e3f2fd; 
+    color: #2196f3; 
+}
+.navigation ul li a .icon {
+    margin-right: 15px;
+    font-size: 2em; 
+}
+
+.promo-box {
+    background-color: #bbdefb; 
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.promo-box p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.promo-img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    
+}
+
+.main-content h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-card {
+    display: flex;
+    align-items: center;
+    background-color: #fefefe;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    
+}
+
+.game-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.game-details {
+    flex-grow: 1;
+}
+
+.game-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.game-version {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-bar1 {
+    height: 100%;
+    width: 60%;
+    background-color: #2196f3; 
+    border-radius: 5px;
+}
+.progress-bar2 {
+    height: 100%;
+    width: 20%;
+    background-color: #2196f3; 
+    border-radius: 5px;
+}
+.progress-bar3 {
+    height: 100%;
+    width: 100%;
+    background-color: #2196f3; 
+    border-radius: 5px;
+}
+
+
+.game-percentage {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #2196f3;
+    margin-left: 20px;
+}
+
+
+(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .game-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .game-thumbnail {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .game-percentage {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+(max-width: 480px) {
+    .profile-pic {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-name {
+        font-size: 1em;
+    }
+
+    .profile-member {
+        font-size: 0.8em;
+    }
+
+    .navigation ul li a {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+
+    .navigation ul li a .icon {
+        font-size: 1.2em;
+    }
+
+    .promo-box p {
+        font-size: 1em;
+    }
+
+    .promo-img {
+        width: 80px;
+    }
+
+    .main-content h1 {
+        font-size: 1.5em;
+    }
+
+    .game-thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .game-title {
+        font-size: 1em;
+    }
+
+    .game-version {
+        font-size: 0.8em;
+    }
+
+    .game-percentage {
+        font-size: 1em;
+    }
+}

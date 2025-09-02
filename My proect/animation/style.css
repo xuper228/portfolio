@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.warp{
+    background-image:url(img/sky.jpeg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.earth{
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+    position: absolute;
+    margin-right: 150px;
+    
+}
+.box{
+    width: 50%;
+    height: 65%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.moon{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: -250px;
+    animation-name: orbit;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes orbit {
+    0%{
+        top: 0;
+        left: 0;
+        height: 150px;
+        width: 150px;
+        top: -200px;
+        z-index: 1;
+    }
+    50%{
+        height: 100px;
+        width: 100px;
+        top: 0;
+        left: -420px;
+        z-index: 1;
+    }
+    51%{
+        height: 100px;
+        width: 100px;
+        top: 0;
+        left: -420px;
+        z-index: 3;
+
+    }
+    100%{
+        z-index: 3;
+        top: 0;
+        left: 0;
+        height: 150px;
+        width: 150px;
+        top: -200px;
+    }
+}

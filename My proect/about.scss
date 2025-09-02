@@ -1,0 +1,72 @@
+@import "_reset.scss";
+@import "_animation.scss";
+
+
+.warp{
+    display: grid;
+    justify-items: center;
+    h3 {
+      color: black;
+      margin: 0;
+      font-size: 25px;
+      font-weight: 700;
+      margin-top: 420px;
+    }
+    
+    h2 {
+      font-size: 100px;
+      font-weight: 200;
+      text-align: center;
+      margin: auto;
+      margin-top: 100px;
+      max-width: 90%;
+    }
+    
+    p {
+      font-size: 35px;
+      color: rgba(0, 0, 0, 0.836);
+      text-align: center;
+      margin: 100px;
+    }
+    
+    form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    width: 600px;
+    height: 60px;
+    border: none;
+    box-shadow: 0 0 3px #999;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+    margin-bottom: 30px;    
+}
+form textarea{
+    width: 600px;
+    height: 300px;
+    border: none;
+    box-shadow: 0 0 3px #999;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 30px; 
+}
+form button{
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+}
+form button i{
+    margin-left: 10px;
+}
+
+  }
+
+

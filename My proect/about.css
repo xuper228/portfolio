@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes slide-down {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes invize {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.warp {
+  display: grid;
+  justify-items: center;
+}
+.warp h3 {
+  color: black;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 420px;
+}
+.warp h2 {
+  font-size: 100px;
+  font-weight: 200;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 90%;
+}
+.warp p {
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.836);
+  text-align: center;
+  margin: 100px;
+}
+.warp form {
+  display: flex;
+  flex-direction: column;
+}
+.warp form input {
+  width: 600px;
+  height: 60px;
+  border: none;
+  box-shadow: 0 0 3px #999;
+  border-radius: 10px;
+  padding: 0 10px;
+  outline: none;
+  margin-bottom: 30px;
+}
+.warp form textarea {
+  width: 600px;
+  height: 300px;
+  border: none;
+  box-shadow: 0 0 3px #999;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 30px;
+}
+.warp form button {
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.warp form button i {
+  margin-left: 10px;
+}/*# sourceMappingURL=about.css.map */
